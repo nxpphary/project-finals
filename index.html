@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ส่วนที่ไม่แสดงออกไปในหน้าจอของ Browser -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ส่วนที่แสดงออกไปในหน้าจอของ Browser -->
+
+  <div class="container">
+    <!-- 3. form -->
+    <div class="header form-input">
+      Register form
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">pro_name</div>
+      <input class="form" name="pro_name" type="text">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">pro_des</div>
+      <input class="form" name="pro_des" type="text">
+    </div>
+    <div class="flex gender form-input">
+      <div class="header-form">pro_inch</div>
+      <div class="flex">
+        <div>
+          <input name="pro_inch" type="radio" value="32"> 32
+        </div>
+        <div>
+          <input name="pro_inch" type="radio" value="49"> 49
+        </div>
+        <div>
+          <input name="pro_inch" type="radio" value="55"> 55
+        </div>
+      </div>
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">pro_price</div>
+      <input class="form" name="pro_price" type="number" min="0" max="100">
+    </div>
+    <div class="flex form-input">
+      <div class="header-form">pro_qty</div>
+      <input class="form" name="pro_qty" type="number" min="0" max="100">
+    </div>
+    <div class="form-input">
+      pro_gift
+      <div>
+        <input name="pro_gift" type="checkbox" value="รีโมท"> รีโมท
+      </div>
+      <div>
+        <input name="pro_gift" type="checkbox" value="ปลั๊กไฟ"> ปลั๊กไฟ
+      </div>
+      <div>
+        <input name="pro_gift" type="checkbox" value="เมาส์"> เมาส์
+      </div>
+    </div>
+
+    <div class="form-input center">
+      <a href="./product.html">Home</a>
+    </div>
+    <div id="response-message" class="message"></div>
+    <div class="center">
+      <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
